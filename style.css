@@ -1,13 +1,321 @@
 body {
   text-align: center;
-  background-color: #000435;
+  padding: 0;
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.logo-img {
+  height: 100px;
+  display: block;
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.hero {
   color: white;
+  background-image: url("webdevphotos/header.png");
+  background-position: center;
+  background-size: cover;
+  min-height: 1000px;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.hero-body{
+  font-size: 25px;
+}
+.logo-img {
+  height: 200px;
+}
+.hero-content {
+  font-size: 60px;
+}
+.hero-content h1{
+  margin-bottom: 5px;
 }
 
-h1 {
-  margin-top: 300px;
+.navigation ul {
+  list-style-type: none;
+  display: flex;
+  gap: 67px;
+}
+.Main2 {
+  color: white;
+  background-image: url("webdevphotos/ChatGPT\ Image\ Sep\ 3\,\ 2026\ at\ 12_06_20\ AM.png");
+  background-position: center;
+  background-size: cover;
+  min-height: 1000px;
+  background-repeat: no-repeat;
+  align-items: center;
+  display: flex;
+  justify-content: center; 
+  flex-direction: column;
+}
+.Main2 h1{
+  font-size: 70px;
+  margin-top: 0;
+}
+.Main2 h2{
+  margin-bottom: 5px;
+  font-size: 35px;
+}
+.Main3 {
+  color: white;
+  background-image: url("webdevphotos/ChatGPT\ Image\ Sep\ 2\,\ 2026\ at\ 11_54_29\ PM.png");
+  background-position: center;
+  background-size: cover;
+  min-height: 1000px;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.Main3 h1{
+  font-size: 67px;
+  margin-top: 0;
+}
+.Main3 h2{
+  margin-bottom: 5px;
+  font-size: 45px;
+}
+ul {
+  color: white;
+  font-size: 18px;
+}
+ul :hover {
+  color: aqua;
 }
 
-.N1 {
-  margin-bottom: 600px;
+a,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+.JoinB {
+  padding: 10px;
+  background-color: transparent;
+  border: solid 1px white;
+  color: white;
+  font-size: 15px;
+  font-weight: bolder;
+
+  &:hover {
+    background-color: white;
+  }
+}
+.site-footer{
+  background-color: #00022e;
+  color:white;
+}
+
+.footer-logo {
+  height: 100px;
+  display: flex;
+}
+.footer-nav li{
+  list-style-type: none;
+}
+
+.footer-list {
+  text-align: left;
+  display: flex;
+}
+
+.line-text{
+  margin: 120px auto;
+  border:none;
+  width: 100%;
+  padding:0; 
+  border-top: 5px solid #00022e;
+}
+.line-text legend{
+  text-align: center;
+  padding: 0 50px;
+  font-weight: bold;
+  font-size: 30px;
+  color: #00022e;
+}
+.foot-buttons{
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+.foot-buttons button {
+  border-radius: 2px;
+  border: none;
+  background-color: grey;
+  width: 43px;
+  height: 36px;
+
+}
+
+.foot-buttons img {
+  width:100%;
+  height:100%;
+}
+
+.logo-wrapper{
+  display:flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0 100px 0;
+}
+
+.logo-block{
+  flex: 0 0 calc(25%-15px);
+  box-sizing: border-box;
+}
+
+.logo-block img{
+  width:200px;
+  height: 90px
+}
+
+/* beggining of history html */
+
+.history-hero {
+  background-image: url("webdevphotos/history\ image.png");
+  background-size: cover;
+  color:white;
+  background-position: center;
+  min-height: 650px;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content:left;
+  display: flex;
+}
+.History-content{
+  height: 750px;
+  background-color: #f4f0ea;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; 
+}
+.History-content .history-title{
+  text-align: left;
+  margin: 100px 80px 50px ;
+  color: #00022e;
+}
+.History-content .hbody {
+  text-align: left;
+  margin: 20px 120px;
+  color: #00022e;
+  font-size: 25px;
+}
+.history-hero-content .history-hero-header{
+  text-align: left;
+  margin: 260px 0 25px 120px;
+  font-size: 75px;
+}
+.history-hero-content .history-hero-body{
+  margin: 0 120px;
+  font-size: 25px;
+  text-align: left;
+}
+
+
+/* Join css*/
+.Join-form-large{
+  background-color: white;
+  min-height: 1500px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border:solid 1px #00022e;
+}
+.join-body{
+  background-image: url("webdevphotos/backgroundimg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 2200px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-size: cover;
+  flex-direction: column;
+}
+
+.join-form{
+  font-size: 25px;
+  padding: 35px;
+  min-height: 800px;
+  min-width: 1000px;
+  background-color: white;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  border: solid 1px grey;
+}
+.Join-form-large h1{
+  font-size: 38px;
+}
+.Join-form-large p{
+  margin-bottom: 80px;
+  font-size: 20px;
+}
+.join-form .member{
+  font-size: 35px;
+  padding-bottom: 60px;
+  border-bottom: solid 2px darkgray;
+  font-weight: bold;
+  margin-left: 55px;
+}
+.join-form p {
+  display: flex;
+  margin-left:55px;
+  color: #00022e;
+  font-weight: bold;
+}
+.join-form .submit{
+  justify-content:  center;
+}
+input[type="text"]{
+  width: 300px;
+  height: 30px;
+}
+label{
+  margin-right: 2rem;
+}
+input[type="tel"]{
+  width: 300px;
+  height: 30px;
+  font-size: 18px;
+}
+input[type="email"]{
+  width: 300px;
+  height: 30px;
+}
+input[type="submit"]{
+  width: 280px;
+  height: 60px;
+  font-size: 30px;
+  border-radius: 5px;
+  background-color: #00022e;
+  color: white;
+  border: solid 1px #00022e;
+
+  &:hover{
+    background-color: white;
+    color: #00022e;
+  }
 }
